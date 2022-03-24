@@ -1,32 +1,654 @@
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>Before</td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
-      <tr> <td>09:00</td>  <td>Automating Tasks with the Unix Shell</td> </tr>
-      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
-      <tr> <td>11:00</td>  <td>Automating Tasks with the Unix Shell (Continued)</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building Programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Building Programs with Python (Continued)</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-      <tr> <td>16:30</td>  <td>END</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version Control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
-      <tr> <td>11:00</td>  <td>Version Control with Git (Continued)</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing Data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Managing Data with SQL (Continued)</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-      <tr> <td>16:30</td>  <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Post-workshop Survey</a></td> </tr>
-      <tr> <td>16:40</td>  <td>END</td> </tr>
-    </table>
-  </div>
+
+
+       <style id="MD_Unix_22314_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl1522314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6522314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Time";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6622314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6722314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#0563C1;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6822314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\[$-F400\]h\:mm\:ss\\ AM\/PM";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6922314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\[$-F400\]h\:mm\:ss\\ AM\/PM";
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7022314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\[$-F400\]h\:mm\:ss\\ AM\/PM";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7122314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	background:#548235;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.x1515664
+  {padding-top:1px;
+  padding-right:1px;
+  padding-left:1px;
+  mso-ignore:padding
+  color:windowtext;
+  font-size:13.0pt;
+  }
+.xl7222314
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+-->
+</style>
+
+<div id="MD_Unix_15664" align=center x:publishsource="Excel">
+
+Day 1
+
+<table border=0 cellpadding=0 cellspacing=0 width=495 class=xl1515664
+ style='border-collapse:collapse;table-layout:fixed;width:372pt'>
+ <col class=xl1515664 width=64 span=2 style='width:48pt'>
+ <col class=xl1515664 width=57 style='mso-width-source:userset;mso-width-alt:
+ 2084;width:43pt'>
+ <col class=xl1515664 width=310 style='mso-width-source:userset;mso-width-alt:
+ 11337;width:233pt'>
+ <tr class=xl6715664 height=20 style='height:15.0pt'>
+  <td height=20 class=xl6715664 width=64 style='height:15.0pt;width:48pt'>Start</td>
+  <td class=x16622314 width=64 style='width:48pt'>End</td>
+  <td class=x16622314 width=57 style='width:43pt'>Length</td>
+  <td class=x16622314 width=310 style='width:233pt'>Episode</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>09:00</td>
+  <td class=x16622314 align=right>09:15</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314><a
+  href="https://carpentries.typeform.com/to/wi32rS?slug=%3CPROJECT%3E"
+  target="_parent">Intro and pre-workshop survey</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>09:00</td>
+  <td class=x16622314 align=right>09:30</td>
+  <td class=x16622314 align=right>00:30:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/markdown-intro/index.html"
+  target="_parent">Introduction to MarkDown</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>09:45</td>
+  <td class=x16622314 align=right>09:50</td>
+  <td class=x16622314 align=right>00:05:00</td>
+  <td class=x16622314><a
+  href="http://swcarpentry.github.io/shell-novice/01-intro/index.html"
+  target="_parent">Introducing the Shell (5 minutes)</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>09:50</td>
+  <td class=x16622314 align=right>10:30</td>
+  <td class=x16622314 align=right>00:40:00</td>
+  <td class=x16622314><a
+  href="http://swcarpentry.github.io/shell-novice/02-filedir/index.html"
+  target="_parent">Navigating Files and Directories (40 minutes)</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>10:30</td>
+  <td class=x16622314 align=right>10:45</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314>BREAK</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>10:40</td>
+  <td class=x16622314 align=right>11:30</td>
+  <td class=x16622314 align=right>00:50:00</td>
+  <td class=x16622314><a
+  href="http://swcarpentry.github.io/shell-novice/03-create/index.html"
+  target="_parent">Working With Files and Directories (50 minutes)</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>11:30</td>
+  <td class=x16622314 align=right>12:05</td>
+  <td class=x16622314 align=right>00:35:00</td>
+  <td class=x16622314><a
+  href="http://swcarpentry.github.io/shell-novice/04-pipefilter/index.html"
+  target="_parent">Pipes and Filters (35 minutes)</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>12:05</td>
+  <td class=x16622314 align=right>13:00</td>
+  <td class=x16622314 align=right>00:55:00</td>
+  <td class=x16622314>LUNCH</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>13:00</td>
+  <td class=x16622314 align=right>13:50</td>
+  <td class=x16622314 align=right>00:50:00</td>
+  <td class=x16622314><a
+  href="http://swcarpentry.github.io/shell-novice/05-loop/index.html"
+  target="_parent">Loops (50 minutes)</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>13:50</td>
+  <td class=x16622314 align=right>14:20</td>
+  <td class=x16622314 align=right>00:30:00</td>
+  <td class=x16622314><a
+  href="http://swcarpentry.github.io/shell-novice/06-script/index.html"
+  target="_parent">Shell Scripts (45 minutes)</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>14:35</td>
+  <td class=x16622314 align=right>14:50</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314><a
+  href="http://swcarpentry.github.io/shell-novice/06-script/index.html"
+  target="_parent">Shell Scripts</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>14:50</td>
+  <td class=x16622314 align=right>15:05</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314>BREAK</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>15:00</td>
+  <td class=x16622314 align=right>15:45</td>
+  <td class=x16622314 align=right>00:45:00</td>
+  <td class=x16622314><a
+  href="http://swcarpentry.github.io/shell-novice/07-find/index.html"
+  target="_parent">Finding Things (45 minutes)</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6515664 align=right style='height:15.0pt'>15:45</td>
+  <td class=x16622314 align=right>15:45</td>
+  <td class=x16622314></td>
+  <td class=x16622314>FINISH</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1515664 style='height:15.0pt'></td>
+  <td class=x16622314></td>
+  <td class=x16622314></td>
+  <td class=x16622314></td>
+ </tr>
+<div id="MD_Unix_17872" align=center x:publishsource="Excel">
+
+Day 2
+
+<table border=0 cellpadding=0 cellspacing=0 width=495 class=xl1515664
+ style='border-collapse:collapse;table-layout:fixed;width:372pt'>
+ <col class=xl1515664 width=64 span=2 style='width:48pt'>
+ <col class=xl1515664 width=57 style='mso-width-source:userset;mso-width-alt:
+ 2084;width:43pt'>
+ <col class=xl1515664 width=310 style='mso-width-source:userset;mso-width-alt:
+ 11337;width:233pt'>
+ <tr class=xl6715664 height=20 style='height:15.0pt'>
+  <td height=20 class=xl6715664 width=64 style='height:15.0pt;width:48pt'>Start</td>
+  <td class=x16622314 width=64 style='width:48pt'>End</td>
+  <td class=x16622314 width=57 style='width:43pt'>Length</td>
+  <td class=x16622314 width=310 style='width:233pt'>Episode</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>09:00</td>
+  <td class=x16622314 align=right>09:15</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314>Introduction (15 minutes)</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>09:15</td>
+  <td class=x16622314 align=right>09:20</td>
+  <td class=x16622314 align=right>00:05:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/01-basics/index.html"
+  target="_parent">1. Automated Version Control</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>09:20</td>
+  <td class=x16622314 align=right>09:25</td>
+  <td class=x16622314 align=right>00:05:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/02-setup/index.html"
+  target="_parent">2. Setting Up Git</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>09:25</td>
+  <td class=x16622314 align=right>09:35</td>
+  <td class=x16622314 align=right>00:10:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/03-create/index.html"
+  target="_parent">3. Creating a Repository</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>09:35</td>
+  <td class=x16622314 align=right>09:55</td>
+  <td class=x16622314 align=right>00:20:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/04-changes/index.html"
+  target="_parent">4. Tracking Changes</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>09:55</td>
+  <td class=x16622314 align=right>10:20</td>
+  <td class=x16622314 align=right>00:25:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/05-history/index.html"
+  target="_parent">5. Exploring History</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>10:20</td>
+  <td class=x16622314 align=right>10:25</td>
+  <td class=x16622314 align=right>00:05:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/06-ignore/index.html"
+  target="_parent">6. Ignoring Things</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>10:25</td>
+  <td class=x16622314 align=right>11:10</td>
+  <td class=x16622314 align=right>00:45:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/07-github/index.html"
+  target="_parent">7. Remotes in GitHub</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>11:10</td>
+  <td class=x16622314 align=right>11:25</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314>Break (15minutes)</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>11:25</td>
+  <td class=x16622314 align=right>11:50</td>
+  <td class=x16622314 align=right>00:25:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/08-collab/index.html"
+  target="_parent">8. Collaborating</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>11:50</td>
+  <td class=x16622314 align=right>12:05</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/09-conflict/index.html"
+  target="_parent">9. Conflicts</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>12:05</td>
+  <td class=x16622314 align=right>12:15</td>
+  <td class=x16622314 align=right>00:10:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/10-open/index.html"
+  target="_parent">10. Open Science</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>12:15</td>
+  <td class=x16622314 align=right>12:20</td>
+  <td class=x16622314 align=right>00:05:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/11-licensing/index.html"
+  target="_parent">11. Licensing</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>12:20</td>
+  <td class=x16622314 align=right>12:25</td>
+  <td class=x16622314 align=right>00:05:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/12-citation/index.html"
+  target="_parent">12. Citation</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>12:25</td>
+  <td class=x16622314 align=right>12:35</td>
+  <td class=x16622314 align=right>00:10:00</td>
+  <td class=x16622314><a
+  href="https://swcarpentry.github.io/git-novice/13-hosting/index.html"
+  target="_parent">13. Hosting</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6717872 align=right style='height:15.0pt'>12:35</td>
+  <td class=x16622314 align=right>12:35</td>
+  <td class=x16622314></td>
+  <td class=x16622314>Lunch</td>
+ </tr>
+</table>
+
 </div>
+
+<div id="MD_Unix_19902" align=center x:publishsource="Excel">
+
+<table border=0 cellpadding=0 cellspacing=0 width=500 class=xl1519902
+ style='border-collapse:collapse;table-layout:fixed;width:375pt'>
+ <col class=xl1519902 width=64 span=2 style='width:48pt'>
+ <col class=xl6919902 width=73 style='mso-width-source:userset;mso-width-alt:
+ 2669;width:55pt'>
+ <col class=xl1519902 width=299 style='mso-width-source:userset;mso-width-alt:
+ 10934;width:224pt'>
+ <tr class=xl6519902 height=20 style='height:15.0pt'>
+  <td height=20 class=xl6715664 width=64 style='height:15.0pt;width:48pt'>Start</td>
+  <td class=x16622314 width=64 style='width:48pt'>End</td>
+  <td class=x16622314 width=73 style='width:55pt'>Length</td>
+  <td class=x16622314 width=299 style='width:224pt'>Episode</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>13:35</td>
+  <td class=x16622314 align=right>13:45</td>
+  <td class=x16622314 align=right>00:10:00</td>
+  <td class=x16622314><a
+  href="https://datacarpentry.org/openrefine-socialsci/01-introduction/index.html"
+  target="_parent">1. Introduction</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>13:45</td>
+  <td class=x16622314 align=right>14:20</td>
+  <td class=x16622314 align=right>00:35:00</td>
+  <td class=x16622314><a
+  href="https://datacarpentry.org/openrefine-socialsci/02-working-with-openrefine/index.html"
+  target="_parent">2. Working with OpenRefine</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>14:20</td>
+  <td class=x16622314 align=right>14:40</td>
+  <td class=x16622314 align=right>00:20:00</td>
+  <td class=x16622314><a
+  href="https://datacarpentry.org/openrefine-socialsci/03-filter-sort/index.html"
+  target="_parent">3. Filtering and Sorting with OpenRefine</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>14:40</td>
+  <td class=x16622314 align=right>14:55</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314>BREAK</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>14:55</td>
+  <td class=x16622314 align=right>15:15</td>
+  <td class=x16622314 align=right>00:20:00</td>
+  <td class=x16622314><a
+  href="https://datacarpentry.org/openrefine-socialsci/04-numbers/index.html"
+  target="_parent">4. Examining Numbers in OpenRefine</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>15:15</td>
+  <td class=x16622314 align=right>15:35</td>
+  <td class=x16622314 align=right>00:20:00</td>
+  <td class=x16622314><a
+  href="https://datacarpentry.org/openrefine-socialsci/05-scripts/index.html"
+  target="_parent">5. Using scripts<span style='mso-spacerun:yes'> </span></a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>15:35</td>
+  <td class=x16622314 align=right>15:50</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314><a
+  href="https://datacarpentry.org/openrefine-socialsci/06-saving/index.html"
+  target="_parent">6. Exporting and Saving Data from OpenRefine</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>15:50</td>
+  <td class=x16622314 align=right>16:00</td>
+  <td class=x16622314 align=right>00:10:00</td>
+  <td class=x16622314><a
+  href="https://datacarpentry.org/openrefine-socialsci/07-resources/index.html"
+  target="_parent">7. Other Resources in OpenRefine</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl7019902 align=right style='height:15.0pt'>16:00</td>
+  <td class=x16622314 align=right>16:00</td>
+  <td class=x16622314></td>
+  <td class=x16622314>FINISH</td>
+ </tr>
+</table>
+</div>
+
+<div id="MD_Unix_19902" align=center x:publishsource="Excel">
+
+Day 3
+
+<table border=0 cellpadding=0 cellspacing=0 width=495 class=xl1515664
+ style='border-collapse:collapse;table-layout:fixed;width:372pt'>
+ <col class=xl1522314 width=64 span=2 style='width:48pt'>
+ <col class=xl7022314 width=80 style='mso-width-source:userset;mso-width-alt:
+ 2925;width:60pt'>
+ <col class=xl1522314 width=241 style='mso-width-source:userset;mso-width-alt:
+ 8813;width:181pt'>
+ <tr class=xl6715664 height=20 style='height:15.0pt'>
+  <td height=20 class=xl6715664 width=64 style='height:15.0pt;width:48pt'>Start</td>
+  <td class=x16622314 width=64 style='width:48pt'>End</td>
+  <td class=x16622314 width=80 style='width:60pt'>Length</td>
+  <td class=x16622314 width=241 style='width:181pt'>Episode</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>09:00</td>
+  <td class=x16622314 align=right>09:30</td>
+  <td class=x16622314 align=right>00:30:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/python-novice/01-intro/index.html"
+  target="_parent">1. Python Fundamentals</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>09:30</td>
+  <td class=x16622314 align=right>10:30</td>
+  <td class=x16622314 align=right>01:00:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/python-novice/02-pandas/index.html"
+  target="_parent">2. Analyzing Data</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>10:30</td>
+  <td class=x16622314 align=right>10:45</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314>BREAK</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>10:45</td>
+  <td class=x16622314 align=right>11:15</td>
+  <td class=x16622314 align=right>00:30:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/python-novice/03-matplotlib/index.html"
+  target="_parent">3. Visualizing Data</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>11:15</td>
+  <td class=x16622314 align=right>12:00</td>
+  <td class=x16622314 align=right>00:45:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/python-novice/04-lists/index.html"
+  target="_parent">4. Storing Multiple Values in Lists</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>12:00</td>
+  <td class=x16622314 align=right>12:30</td>
+  <td class=x16622314 align=right>00:30:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/python-novice/05-loop/index.html"
+  target="_parent">5. Repeating Actions with Loops</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>12:30</td>
+  <td class=x16622314 align=right>13:30</td>
+  <td class=x16622314 align=right>01:00:00</td>
+  <td class=x16622314>LUNCH</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>13:30</td>
+  <td class=x16622314 align=right>14:30</td>
+  <td class=x16622314 align=right>01:00:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/python-novice/06-files/index.html"
+  target="_parent">6. Analyzing Data From Mutliple Files</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>14:30</td>
+  <td class=x16622314 align=right>14:45</td>
+  <td class=x16622314 align=right>00:15:00</td>
+  <td class=x16622314>BREAK</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>14:30</td>
+  <td class=x16622314 align=right>15:00</td>
+  <td class=x16622314 align=right>00:30:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/python-novice/07-cond/index.html"
+  target="_parent">7. Making Choices</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>15:00</td>
+  <td class=x16622314 align=right>15:30</td>
+  <td class=x16622314 align=right>00:30:00</td>
+  <td class=x16622314><a
+  href="https://nclrse-training.github.io/python-novice/08-func/index.html"
+  target="_parent">8. Creating Functions</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>15:30</td>
+  <td class=x16622314 align=right>15:40</td>
+  <td class=x16622314 align=right>00:10:00</td>
+  <td class=x16622314>Post workshop survey</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>15:40</td>
+  <td class=x16622314 align=right>16:00</td>
+  <td class=x16622314 align=right>00:20:00</td>
+  <td class=x16622314>Questions and Answers</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6522314 align=right style='height:15.0pt'>16:00</td>
+  <td class=x16622314 align=right>16:00</td>
+  <td class=x16622314></td>
+  <td class=x16622314>FINISH</td>
+ </tr>
+</table>
