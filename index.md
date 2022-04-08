@@ -19,7 +19,7 @@ email: ["jannetta.steyn@newcastle.ac.uk"]    # boxed, comma-separated list of co
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
-Etherpad link: https://pad.carpentries.org/2022-04-11-NUAcT
+
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
 {% comment %}
@@ -176,7 +176,8 @@ Modify the block below if there are any special requirements.
 <p id="requirements">
   <strong>Requirements:</strong>
   {% if online == "false" %}
-   Please ring your own laptop if you wish. Otherwise, there will be computers available for you to use.
+   Please bring your own laptop if you wish. Otherwise, there will be computers available for you to use.
+  
   {% else %}
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
@@ -245,7 +246,7 @@ Display the contact email address set in the configuration file.
   To learn more about the roles at the workshop (who will be doing what),
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
-
+Etherpad link: [https://pad.carpentries.org/2022-04-11-NUAcT](https://pad.carpentries.org/2022-04-11-NUAcT)
 {% comment %}
 WHO CAN ATTEND?
 
